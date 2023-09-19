@@ -1,0 +1,52 @@
+<div>
+    <h1>LOGIN</h1>
+    <ul>
+        <li><a routerLink="/register" routerLinkActive="active" class="btn btn-warning">Register</a></li>
+    </ul>
+</div>
+
+<div class="form">
+    <div class="register">
+        <h3>Welcome back!</h3>
+        <p>Track your health with <b>SportsCo.</b></p>
+        <div class="email boo">
+            <b><label for="email">Email</label></b>
+            <input name="email" type="email" placeholder="Enter your email">
+        </div>
+        <div class="password boo">
+            <b><label for="password">Password</label></b>
+            <input name="password" type="password">
+            <!-- <i class="fa fa-eye-slash" aria-hidden="true"></i> -->
+        </div>
+
+        <div class="checked">
+            <div class="check">
+                <input type="checkbox" name="checked" class="checkbox">
+                <b>Remember me</b>
+            </div>
+            <b><a href="">Forgot Password</a></b>
+        </div>
+
+        <button class="sign-in">Sign In</button>
+
+        <div class="or">
+            <hr>OR
+            <hr>
+        </div>
+
+        <div class="icons">
+            <div>
+                <button class="link"><img style="padding: 2px;" src="/assets/Google.svg" alt=""></button>
+            </div>
+            <div>
+                <button class="link"><img src="/assets/Facebook.svg" alt=""></button>
+            </div>
+            <div>
+                <button class="link"><img src="/assets/Apple.svg" alt=""></button>
+            </div>
+        </div>
+
+        <p style="margin-top: 15px; font-size: 0.8em;">New to SpotsCo? <b><a routerLink="/register"
+                    routerLinkActive="active">Create an account.</a></b></p>
+    </div>
+</div>
