@@ -9,18 +9,18 @@
         <p>Provide your details.</p>
         <div class="name boo">
             <b><label for="name">Your name</label></b>
-            <input name="name" type="name">
+            <input name="name" type="name" placeholder="Please Enter Your Name" required [(ngModel)]="user.name">
         </div>
         <div class="email boo">
             <b><label for="email">Email</label></b>
-            <input name="email" type="email">
+            <input name="email" type="email" required [(ngModel)]="user.email">
         </div>
         <div class="password boo">
             <b><label for="password">Password</label></b>
-            <input name="password" type="password">
+            <input name="password" type="password" required [(ngModel)]="user.password">
         </div>
         <p style="font-size: 0.8em;">By signing up i agree to the <a href="">thems & conditions</a> and <a href="">privacy policy</a></p>
-        <button class="create">Create an account</button>
+        <button (click)="register()" class="create">Create an account</button>
 
             <div class="or">
                 <hr>OR <hr>
